@@ -129,7 +129,7 @@ function Shortener() {
                 fgColor="#a855f7"
                 level="H"
               />
-              <p className="hint">Scan to open on mobile (works after deployment)</p>
+              <p className="hint">Scan to open</p>
             </motion.div>
           </motion.div>
         )}

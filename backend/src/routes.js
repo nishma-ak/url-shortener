@@ -31,7 +31,7 @@ router.post('/shorten', async (req, res) => {
     res.json({
       original_url,
       short_code,
-      short_url: `https://linksnap-backend-hnns.onrender.com${short_code}`,
+      short_url: `https://linksnap-backend-hnns.onrender.com/${short_code}`,
     });
   } catch (err) {
     res.status(500).json({ error: 'Database error' });
