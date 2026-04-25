@@ -11,7 +11,7 @@ function Analytics() {
     if (!code) { setError('Please enter a short code'); return; }
     setError('');
     try {
-      const response = await axios.get(`https://linksnap-tbon.onrender.com/${code}`);
+      const response = await axios.get(`https://linksnap-tbon.onrender.com/analytics/${code}`);
       const clicks = response.data.clicks.reduce((acc, click) => {
         const date = click.clicked_at.split('T')[0];
         acc[date] = (acc[date] || 0) + 1;
