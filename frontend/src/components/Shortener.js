@@ -17,7 +17,7 @@ function Shortener() {
     setError('');
     setResult(null);
     try {
-      const response = await axios.post('https://linksnap-backend-hnns.onrender.com/shorten', {
+      const response = await axios.post('https://linksnap-tbon.onrender.com/shorten', {
         original_url: url,
         custom_code: customCode || undefined,
       });
